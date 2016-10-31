@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.wincber.titlelayoutdemo.MainActivity">
+
+  <com.example.wincber.titlelayoutdemo.TitleLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/title_tl">
+  </com.example.wincber.titlelayoutdemo.TitleLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+  <View
+      android:layout_width="15dp"
+      android:layout_height="15dp"
+      android:layout_marginTop="@dimen/activity_vertical_margin"
+      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+      android:background="@color/colorProgress"
+      android:id="@+id/progress_red_flag"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@id/progress_red_flag"
+    android:layout_toRightOf="@id/progress_red_flag"
+    android:text="已完成" />
+  <View
+      android:layout_width="15dp"
+      android:layout_height="15dp"
+      android:layout_below="@id/progress_red_flag"
+      android:layout_marginTop="16dp"
+      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+      android:background="#888888"
+      android:id="@+id/progress_gray_flag"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignTop="@id/progress_gray_flag"
+      android:layout_toRightOf="@id/progress_gray_flag"
+      android:text="未完成" />
+
+  <com.example.wincber.titlelayoutdemo.MyArcProgress
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/arc_progress_ap"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true" />
+</RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1">
+  <!--  <com.example.wincber.titlelayoutdemo.MyArcProgress
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/arc_progress_ap_2" />
+    <View
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="#0000FF"
+        android:id="@+id/progress_blue_flag"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/progress_blue_flag"
+        android:layout_toRightOf="@id/progress_blue_flag"
+        android:text="已完成" />
+    <View
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/progress_blue_flag"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="#888888"
+        android:id="@+id/progress_gray_flag_2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/progress_gray_flag_2"
+        android:layout_toRightOf="@id/progress_gray_flag_2"
+        android:text="未完成" />-->
+    <com.example.wincber.titlelayoutdemo.EyeProgress
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_ep"/>
+  </RelativeLayout>
+</LinearLayout>
